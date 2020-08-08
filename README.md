@@ -47,7 +47,7 @@ fixed : 고정적인 위치에 배치된다. 브라우저의 스크롤에 의한
             font-size:2rem;
             background-color: green;
           }
-}<code><pre><br/>
+}</code></pre><br/>
 
 #2
 - **Flex**<br/>
@@ -82,7 +82,7 @@ inherit = 상위 요소의 값을 상속 받습니다.<br/>
             font-size: 16px;
             outline: none;
         }
-}<code><pre>
+}</code></pre>
 <br/>
 
 #4
@@ -116,7 +116,8 @@ inherit = 상위 요소의 값을 상속 받습니다.<br/>
             border-radius: 1px;/*링크참조*/
             cursor: pointer;/*마우스 포인터 속성*/
         }
-}<code><pre><br/>
+}</code></pre>
+<br/>
 
 + border-radius(표면 둥글게):<https://aboooks.tistory.com/287>
 + 사용 테그:
@@ -127,7 +128,8 @@ inherit = 상위 요소의 값을 상속 받습니다.<br/>
         </div>
             <button type="submit"class="submit">go</button>  
  </div>
-}<code><pre><br/>
+}</code></pre>
+<br/>
 
 #5
 - **transform library(csshake 적용법)**<br/>
@@ -135,13 +137,15 @@ inherit = 상위 요소의 값을 상속 받습니다.<br/>
 <pre><code>{
  <link
 rel="stylesheet" type="text/css" href="http://csshake.surge.sh/csshake.min.css">
-}<code><pre><br/>
+}</code></pre>
+<br/>
 + 라이브러리 속 원하는 div 테그 만들기 아래 코드에게 기능 부여
 <pre><code>{
   <div class="shake-vertical">
          <div id="toy"><!--transfrom library 사용-->
    </div>
-}<code><pre><br/>
+}</code></pre>
+<br/>
 
 #6
 - **외부 삽입(image+video+music)**<br/>
@@ -159,7 +163,8 @@ rel="stylesheet" type="text/css" href="http://csshake.surge.sh/csshake.min.css">
             background-repeat:no-repeat;
             background-position: center;
         }
-}<code><pre><br/>
+}</code></pre>
+<br/>
 
 + 동영상 삽입:<https://www.codingfactory.net/11880>
 
