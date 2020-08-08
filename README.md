@@ -183,6 +183,14 @@ inherit = 상위 요소의 값을 상속 받습니다.<br/>
 
 # 추가예정
 
++ 소스코드 추가
+
+~~~
+  .submit:hover{
+            background-color:orange; <!--변화를 감지하면 오랜지색으로 검색버튼 변화-->
+        }
+~~~
+
 
 
 
