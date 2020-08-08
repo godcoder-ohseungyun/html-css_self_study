@@ -99,7 +99,7 @@ inherit = 상위 요소의 값을 상속 받습니다.<br/>
 
   .input{
             width: 348px; height: 21px;
-            margin: 6px 0 0 9px; <!--상 좌 우 하-->
+            margin: 6px 0 0 9px; <!--상 우 하 좌-->
             border: 0;
             line-height: 21px;<!--줄간격-->
             font-weight: bold;
