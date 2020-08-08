@@ -13,6 +13,11 @@
 - [외부 삽입(image+video+music)](#6)
 <br/>
 
+# 완성본 기능미리보기(업그레이드 예정)
+
+![ezgif com-video-to-gif](https://user-images.githubusercontent.com/68331041/89713611-c2568b80-d9d3-11ea-9f95-65e356aa460f.gif)
+
+
 # 1
 - **position**<br/>
 
