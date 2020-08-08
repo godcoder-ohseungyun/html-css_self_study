@@ -99,9 +99,9 @@ inherit = 상위 요소의 값을 상속 받습니다.<br/>
 
   .input{
             width: 348px; height: 21px;
-            margin: 6px 0 0 9px; /*상 좌 우 하*/
+            margin: 6px 0 0 9px; <!--상 좌 우 하-->
             border: 0;
-            line-height: 21px;/*줄간격*/
+            line-height: 21px;<!--줄간격-->
             font-weight: bold;
             font-size: 16px;
             outline: none;
@@ -113,44 +113,55 @@ inherit = 상위 요소의 값을 상속 받습니다.<br/>
             background: green;
             color: white;
             font-weight: bold;
-            border-radius: 1px;/*링크참조*/
-            cursor: pointer;/*마우스 포인터 속성*/
+            border-radius: 1px;<!--링크참조-->
+            cursor: pointer;<!--마우스 포인터 속성-->
         }
 }</code></pre>
 <br/>
 
 + border-radius(표면 둥글게):<https://aboooks.tistory.com/287>
 + 사용 테그:
-<pre><code>{
+
+~~~
+
 <div id="searchmaker">
         <div id="search"><!--검색창-->
             <input type="text" class="input" >       
         </div>
             <button type="submit"class="submit">go</button>  
  </div>
-}</code></pre>
+~~~
+
 <br/>
 
 # 5
 - **transform library(csshake 적용법)**<br/>
 + head 태그에 아래 코드 삽입
-<pre><code>{
- <link
-rel="stylesheet" type="text/css" href="http://csshake.surge.sh/csshake.min.css">
-}</code></pre>
+~~~
+
+ <link rel="stylesheet" type="text/css" href="http://csshake.surge.sh/csshake.min.css">
+
+~~~
+
 <br/>
 + 라이브러리 속 원하는 div 테그 만들기 아래 코드에게 기능 부여
-<pre><code>{
+
+~~~
+
   <div class="shake-vertical">
          <div id="toy"><!--transfrom library 사용-->
    </div>
-}</code></pre>
+
+~~~
+
 <br/>
+
 
 # 6
 - **외부 삽입(image+video+music)**<br/>
 
-<pre><code>{
+~~~
+
 /*사진 테그 중앙이미지*/ 
         #pic{
             border:2px solid green;
@@ -163,7 +174,8 @@ rel="stylesheet" type="text/css" href="http://csshake.surge.sh/csshake.min.css">
             background-repeat:no-repeat;
             background-position: center;
         }
-}</code></pre>
+~~~
+
 <br/>
 
 + 동영상 삽입:<https://www.codingfactory.net/11880>
