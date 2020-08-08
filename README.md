@@ -49,7 +49,7 @@ fixed : 고정적인 위치에 배치된다. 브라우저의 스크롤에 의한
           }
 }</code></pre><br/>
 
-#2
+# 2
 - **Flex**<br/>
 
 + Flex 사용법:<https://heropy.blog/2018/11/24/css-flexible-box/>
@@ -58,7 +58,7 @@ fixed : 고정적인 위치에 배치된다. 브라우저의 스크롤에 의한
 + 추신) flex는 items의 정렬방식으로 다양한 정렬구현이 가능하다.
 구현 태그들을 참조하여 익히도록 하자
 
-#3
+# 3
 - **Font**<br/>
 
 - font-family(글꼴 변경)<br/>
@@ -85,7 +85,7 @@ inherit = 상위 요소의 값을 상속 받습니다.<br/>
 }</code></pre>
 <br/>
 
-#4
+# 4
 
 - **검색창 구현**
 
@@ -131,7 +131,7 @@ inherit = 상위 요소의 값을 상속 받습니다.<br/>
 }</code></pre>
 <br/>
 
-#5
+# 5
 - **transform library(csshake 적용법)**<br/>
 + head 태그에 아래 코드 삽입
 <pre><code>{
@@ -147,7 +147,7 @@ rel="stylesheet" type="text/css" href="http://csshake.surge.sh/csshake.min.css">
 }</code></pre>
 <br/>
 
-#6
+# 6
 - **외부 삽입(image+video+music)**<br/>
 
 <pre><code>{
@@ -169,7 +169,7 @@ rel="stylesheet" type="text/css" href="http://csshake.surge.sh/csshake.min.css">
 + 동영상 삽입:<https://www.codingfactory.net/11880>
 
 
-#추가예정
+# 추가예정
 
 
 
