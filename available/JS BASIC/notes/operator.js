@@ -9,7 +9,7 @@ console.log(1 - 1); // substract
 console.log(1 / 1); // divide
 console.log(1 * 1); // multiply
 console.log(5 % 2); // remainder
-console.log(2 ** 3); // exponentiation
+console.log(2 ** 3); // exponentiation 2^3
 
 // 3. Increment and decrement operators
 let counter = 2;
@@ -65,14 +65,15 @@ function check() {
 console.log(!value1);
 
 // 7. Equality
+
 const stringFive = '5';
 const numberFive = 5;
 
-// == loose equality, with type conversion
+// == loose equality, with type conversion 타입 고려 x
 console.log(stringFive == numberFive);
 console.log(stringFive != numberFive);
 
-// === strict equality, no type conversion
+// === strict equality, no type conversion 타입까지 고려
 console.log(stringFive === numberFive);
 console.log(stringFive !== numberFive);
 
@@ -85,12 +86,12 @@ console.log(ellie1 === ellie2);
 console.log(ellie1 === ellie3);
 
 // equality - puzzler
-console.log(0 == false);
-console.log(0 === false);
-console.log('' == false);
-console.log('' === false);
-console.log(null == undefined);
-console.log(null === undefined);
+console.log(0 == false); //t
+console.log(0 === false); //f
+console.log('' == false); //t
+console.log('' === false); //f
+console.log(null == undefined); //t
+console.log(null === undefined); //f
 
 // 8. Conditional operators: if
 // if, else if, else

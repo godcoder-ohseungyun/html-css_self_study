@@ -8,7 +8,8 @@
 
 // 1. Class declarations
 class Person {
-  // constructor
+
+  // constructor 생성자
   constructor(name, age) {
     // fields
     this.name = name;
@@ -21,7 +22,9 @@ class Person {
   }
 }
 
-const ellie = new Person('ellie', 20);
+
+
+const ellie = new Person('ellie', 20); //객체 생성
 console.log(ellie.name);
 console.log(ellie.age);
 ellie.speak();
@@ -96,7 +99,10 @@ class Shape {
   }
 }
 
+//상속 extends
+
 class Rectangle extends Shape {}
+
 class Triangle extends Shape {
   draw() {
     super.draw();
@@ -118,7 +124,7 @@ const triangle = new Triangle(20, 20, 'red');
 triangle.draw();
 console.log(triangle.getArea());
 
-// 6. Class checking: instanceOf
+// 6. Class checking: instanceOf 정확도 up
 console.log(rectangle instanceof Rectangle);
 console.log(triangle instanceof Rectangle);
 console.log(triangle instanceof Triangle);

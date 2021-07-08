@@ -96,18 +96,22 @@ function upgradeUser(user) {
 // 1. Function expression
 // a function declaration can be called earlier than it is defined. (hoisted)
 // a function expression is created when the execution reaches it.
-const print = function () {
+
+const print = function () { //print라는 변수에 함수 자체를 선언과 동시에 할당
   // anonymous function
   console.log('print');
 };
+
 print();
-const printAgain = print;
+
+const printAgain = print; //함수를 할당받은 변수를 또 다른 변수로 할당가능
 printAgain();
+
 const sumAgain = sum;
 console.log(sumAgain(1, 3));
 
 // 2. Callback function using function expression
-function randomQuiz(answer, printYes, printNo) {
+function randomQuiz(answer, printYes, printNo) { //함수를 인자로 전달해줄수있다.
   if (answer === 'love you') {
     printYes();
   } else {
@@ -146,24 +150,4 @@ const simpleMultiply = (a, b) => {
   console.log('IIFE');
 })();
 
-// Fun quiz time❤️
-// function calculate(command, a, b)
-// command: add, substract, divide, multiply, remainder
 
-function calculate(command, a, b) {
-  switch (command) {
-    case 'add':
-      return a + b;
-    case 'substract':
-      return a - b;
-    case 'divide':
-      return a / b;
-    case 'multiply':
-      return a * b;
-    case 'remainder':
-      return a % b;
-    default:
-      throw Error('unknown command');
-  }
-}
-console.log(calculate('add', 2, 3));

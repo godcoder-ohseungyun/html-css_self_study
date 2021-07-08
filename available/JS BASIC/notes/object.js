@@ -12,22 +12,28 @@ function print(person) {
   console.log(person.age);
 }
 
-const ellie = { name: 'ellie', age: 4 };
+
+//비추천 기능 알아만 두자=======================================================
+const ellie = { name: 'ellie', age: 4 }; //class 없이도 사용 가능
 print(ellie);
 
 // with JavaScript magic (dynamically typed language)
 // can add properties later
-ellie.hasJob = true;
+ellie.hasJob = true; //이후에 요소 하나 더 추가
 console.log(ellie.hasJob);
 
 // can delete properties later
-delete ellie.hasJob;
+delete ellie.hasJob; //이후에 요소 하나 삭제
 console.log(ellie.hasJob);
+//==============================================================================
+
 
 // 2. Computed properties
 // key should be always string
-console.log(ellie.name);
-console.log(ellie['name']);
+//맴버변수 출력 방법 2
+console.log(ellie.name); // 고정값으로 출력되는 경우
+console.log(ellie['name']); //실시간 변화를 받아와서 출력되는 경우 
+
 ellie['hasJob'] = true;
 console.log(ellie.hasJob);
 
@@ -53,20 +59,23 @@ function Person(name, age) {
 }
 
 // 5. in operator: property existence check (key in obj)
-console.log('name' in ellie);
-console.log('age' in ellie);
+console.log('name' in ellie); //true
+console.log('age' in ellie); //false
 console.log('random' in ellie);
 console.log(ellie.random);
 // 6. for..in vs for..of
 // for (key in obj)
 console.clear();
+
+
 for (let key in ellie) {
   console.log(key);
 }
 
 // for (value of iterable)
 const array = [1, 2, 4, 5];
-for (let value of array) {
+
+for (let value of array) { //pyton 처럼 반복문 선언 가능
   console.log(value);
 }
 
