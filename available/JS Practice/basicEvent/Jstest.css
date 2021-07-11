@@ -1,0 +1,10 @@
+
+h1 {
+    color: blue;
+}
+
+/*for Js
+호출시 어떤 elements든 red로 적용*/
+.active { 
+    color: red;
+}

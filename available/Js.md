@@ -1,6 +1,10 @@
 # 바닐라 Js
 
-https://www.youtube.com/watch?v=tJieVCgGzhs&list=PLv2d7VI9OotTVOL4QmPfvJWPJvkmv6h-2&index=2
+[엘리 JS 문법]https://www.youtube.com/watch?v=tJieVCgGzhs&list=PLv2d7VI9OotTVOL4QmPfvJWPJvkmv6h-2&index=2
+
+[니꼬 JS 적용파트]https://nomadcoders.co/javascript-for-beginners/lectures/2901
+
+[apis]: https://developer.mozilla.org/ko/docs/orphaned/Web/Reference/API
 
 ---
 
@@ -13,6 +17,19 @@ https://www.youtube.com/watch?v=tJieVCgGzhs&list=PLv2d7VI9OotTVOL4QmPfvJWPJvkmv6
 배제
 
 **바닐라 자바스크립트**: 추가적인 라이브러리나 프레임워크가 없는 순수 Js를 배워야한다.
+
+
+
+Js를 활용하여 유저의 유효성을 검사하기 습관화
+
+~~~js
+if (userInput ==="") { //유저 입력이 if else ~~
+    //...
+}
+else {
+    //...
+}
+~~~
 
 
 
@@ -45,6 +62,8 @@ Js는 유연한 언어임으로 위험성도 존재한다.  js파일 상단에 �
 > };
 > ~~~
 
+
+
 Js engine을 보유하고있는 programs
 
 > **NodeJs:** back-end
@@ -59,7 +78,7 @@ Js engine을 보유하고있는 programs
 
 > NodeJs 설치: 웹 없이 터미널 상에서도 컴파일 가능하게 해준다. https://nodejs.org/ko/download/
 >
-> html&css와 Js 파일을 연결하여 사용할것이다.
+> ## **html&css와 Js 파일을 연결**
 >
 > 사용자가 web을 켤때 **html parsing   js fetching  executing js** 3가지가 완료되어야 하는데
 >
@@ -78,17 +97,39 @@ Js engine을 보유하고있는 programs
 
 
 
-# 실습
+# 기타
 
 ---
-
-**차별점**
 
 함수는 인자로 사용될수있다.
 
 람다 기능도 인자로 사용가능
 
 ctrl + click으로 해당 api 정의로 이동할수있다.
+
+모든걸 JS로 해결하기 보다 css와 html의 영역(기본 브라우저)을 잘 활용해야한다.
+
+> 1. JS로 css속성 control X
+>
+> 2. html input tag 자체의 입력text 수 제한 활용 
+>
+> ~~~js
+> //JS를 이용하여 input tag text lenth를 제한할 필요 x
+> if (userInput.length ==="") { //유저 입력이 if else ~~
+>     //...
+> }
+> else {
+>     //...
+> }
+> ~~~
+
+브라우저의 기본 기능을 이해하고 필요에 따라 기능을 막는다. ex) **form**: page renew  **link**: go to the linkPage
+
+로컬스토리지:: 웹 브라우저에 정보를 저장하고 있도록 할수있다.
+
+> https://han41858.tistory.com/54
+
+
 
 
 

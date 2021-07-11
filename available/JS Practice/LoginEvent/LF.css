@@ -1,0 +1,10 @@
+
+h1 {
+    color: blue;
+}
+
+/*for Js
+hidden className을 갖고있다면 어떤 elements든 hidden 적용*/
+.hidden { 
+    display: none;
+}
