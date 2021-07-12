@@ -1,0 +1,8 @@
+<h1>글을 작성해주시요</h1>
+
+<form action="{%url 'create'%}" method="post" enctype="multipart/form-data">
+    {%csrf_token%}
+    {{form}} <!--폼-->
+    <!--{{form.as_p}}-->
+    <button type="submit">저장</button>
+</form>

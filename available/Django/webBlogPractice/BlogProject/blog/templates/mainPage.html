@@ -1,0 +1,22 @@
+{% extends 'base.html'%}
+
+
+{% block content %}
+
+{%if user.is_authenticated %}
+{{user.username}}님 어서오세요. 닉네임: {{user.nickname}}
+{%endif%}
+
+<h1>메인 페이지</h1>
+ 
+<div><a href ="{%url 'new'%}">글쓰기</a></div>
+
+<div class ="container">
+    {%for blogT in blogTables%} <!--views.py에서 넘겨준 blogTable for문을 통해 객체 하나하나 참조-->
+    <h4>{{blogT.title}}
+    {{blogT.summary}} <a href = "{%url 'detail' blogT.id%}">더보기..</a> <!--detail path-->
+    <br>
+    {%endfor%}
+</div>
+
+{% endblock%}

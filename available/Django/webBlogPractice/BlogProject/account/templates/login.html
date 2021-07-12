@@ -1,0 +1,8 @@
+<h1>LoginPage</h1>
+
+<form action="{%url 'login'%}" method="post"> <!--login path 순환연결-->
+    {%csrf_token%}
+    {{form}} <!--폼-->
+    <!--{{form.as_p}}-->
+    <button type="submit">저장</button>
+</form>

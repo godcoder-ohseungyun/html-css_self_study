@@ -1,0 +1,9 @@
+<h1>글을 수정해주시요</h1>
+
+<form action="{%url 'update' edit_blog.id%}" method="post"> <!--action엔 path를 통해 views.py의 create와 연결할것이다 post방식을 사용할것-->
+    {%csrf_token%}
+    제목: <input type="text" name="title" value = "{{edit_blog.title}}">
+    작가: <input type="text" name="writer" value = "{{edit_blog.writer}}">
+    내용:<textarea name="body" id="" cols="30" rows="10">{{edit_blog.body}}</textarea>
+    <button type="submit">저장</button>
+</form>

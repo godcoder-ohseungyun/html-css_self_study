@@ -1,0 +1,55 @@
+
+<!--상속시킬 template 기본 틀-->
+
+<!--빈창에 html:5 click 기본틀 자동완성-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLOG</title>
+    
+    <!--부트스트랩 CDN-->
+    <!-- 합쳐지고 최소화된 최신 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <!-- 부가적인 테마 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+    <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+   
+    <style>
+        body{text-align:center;}
+    </style>
+</head>
+<body>
+    <h1>메인 페이지</h1>
+
+    {% load static %}
+    <!--상속시킬 nav bar-->
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="{%url 'mainPage'%}"> <!--mainPage로 이동하게끔 링크 걸어줌-->
+              <img src="{%static 'test.PNG' %}" alt="" width="50" height="50"> 
+            </a>
+
+            {%if not user.is_authenticated %} <!--인증된 유저라면-->
+            <a class="navbar-login" href="{%url 'login'%}">로그인</a>
+            {%endif%}
+            {%if user.is_authenticated %}
+            <a class="navbar-logout" href="{%url 'logout'%}">로그아웃</a>
+            {%endif%}
+            <a class="navbar-signup" href="{%url 'signup'%}">회원가입</a>
+          </div>
+        </div>
+      </nav>
+
+    <!--상속 구문-->
+    <div class="container">
+        {% block content %}
+        {% endblock %}
+    </div>
+    
+</body>
+</html>
