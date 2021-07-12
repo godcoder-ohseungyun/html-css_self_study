@@ -4,8 +4,11 @@
 // Execute the code block by orger after hoisting.
 // hoisting: var, function declaration
 console.log('1');
-setTimeout(() => console.log('2'), 1000);
+setTimeout(() => console.log('2'), 1000); //함수를 n ms 후에 실행
 console.log('3');
+
+
+//call back이 항상 비동기 인것은 x
 
 // Synchronous callback
 function printImmediately(print) {
@@ -19,6 +22,12 @@ function printWithDelay(print, timeout) {
 }
 printWithDelay(() => console.log('async callback'), 2000);
 
+
+//result: 1 3 hello 2 async callback
+
+
+
+//콜백 쓰래기 코드
 // Callback Hell example
 class UserStorage {
   loginUser(id, password, onSuccess, onError) {

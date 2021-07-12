@@ -1,5 +1,9 @@
 'use strict';
 
+// http://www.jsondiff.com/
+//
+
+
 // JSON
 // JavaScript Object Notation
 
@@ -16,7 +20,7 @@ const rabbit = {
   color: 'white',
   size: null,
   birthDate: new Date(),
-  jump: function () {
+  jump: function () { //json에 object 내부 메소드는 전달 되지 않는다.
     console.log(`${this.name} can jump!`);
   },
 };
@@ -40,11 +44,11 @@ json = JSON.stringify(rabbit);
 console.log(json);
 const obj = JSON.parse(json, (key, value) => {
   console.log(`key: ${key}, value: ${value}`);
-  return key === 'birthDate' ? new Date(value) : value;
+  return key === 'birthDate' ? new Date(value) : value; //value를 string type 그대로 리턴 x  -> Date type으로 리턴 api 적용 가능
 });
 console.log(obj);
 rabbit.jump();
 // obj.jump();
 
-console.log(rabbit.birthDate.getDate());
-console.log(obj.birthDate.getDate());
+console.log(rabbit.birthDate.getDate());// ok
+console.log(obj.birthDate.getDate());  // error //json에서 가져온 value는 string임으로 api 적용 불가
